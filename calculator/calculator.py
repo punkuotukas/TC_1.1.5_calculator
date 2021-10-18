@@ -30,23 +30,17 @@ class Calculator:
             memory = round(float(memory) / float(num_to_divide_by), 4)
             self.memory = memory
         except ZeroDivisionError:
-            print('Not possible to divide by 0')
+            print('What\'s the point of dividing something by zero?')
         return print(memory)
 
-    def take_root(self, power_of_root):
-        try:
-            memory = float(self.memory)
-        #     assert power_of_root != 0
-        #     raise AssertionError
-        # except AssertionError:
-        #     print('0th root not possible')
-            assert memory >= 0
-            raise AssertionError
-        except AssertionError:
-            print('Cannot take root from negative number')
+    def take_root(self, power_of_root: float):
+        memory = float(self.memory)
+        if memory < 0:
+            return print('Negative root makes no sense. Give it another try.')
+        elif power_of_root == 0:
+            print('There is no realistic reason to take 0th root.')
         else:
             memory = round(float(memory) ** (1/float(power_of_root)), 4)
-            self.memory = memory
             return print(memory)
 
     def reset_memory(self):
@@ -69,7 +63,7 @@ class Calculator:
             num_to_multiply_by = input('Number to multiply by?\n')
             return self.multiply(num_to_multiply_by)
         elif operation_input == 'R':
-            power_of_root = input('Power of root?\n')
+            power_of_root = float(input('Power of root?\n'))
             return self.take_root(power_of_root)
         elif operation_input == '0':
             return self.reset_memory()
@@ -78,16 +72,16 @@ class Calculator:
 
 
 if __name__ == '__main__':
-    # print('Welcome')
-    # time.sleep(1)
-    # print('This program does basic math calculations.')
-    # time.sleep(2)
-    # message = '''\
-    # Type \'exit\' or press \'Ctrl+c\' at any moment to close the program
-    # and \'0\' for operation to reset calculator\'s memory.\
-    # '''
-    # print(message)
-    # time.sleep(2)
+    print('Welcome')
+    time.sleep(1)
+    print('This program does basic math calculations.')
+    time.sleep(2)
+    message = '''\
+    Type \'exit\' or press \'Ctrl+c\' at any moment to close the program
+    and \'0\' for operation to reset calculator\'s memory.\
+    '''
+    print(message)
+    time.sleep(2)
     calculator = Calculator()
     num_to_operate_on = input('What\'s the number to operate on?\n')
     calculator.memory = num_to_operate_on
