@@ -35,9 +35,6 @@ def test_take_root():
     assert calculator.reset_memory() == 0
     assert calculator.add(64) == 64
     assert calculator.take_root(2) == 8
-    assert calculator.reset_memory() == 0
-    assert calculator.add(8) == 8
     assert calculator.take_root(3) == 2
-    assert calculator.reset_memory() == 0
-    assert calculator.add(64) == 64
-    assert calculator.take_root(-1) == 0.0156
+    assert calculator.add(64) == 66
+    assert calculator.take_root(-1) == 0.0152

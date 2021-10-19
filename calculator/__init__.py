@@ -47,6 +47,7 @@ class Calculator:
             print('There is no realistic reason to take 0th root.')
         else:
             memory = round(float(memory) ** (1/float(power_of_root)), 4)
+            self.memory = memory
             print(memory)
             return memory
 
@@ -79,16 +80,16 @@ class Calculator:
 
 
 if __name__ == '__main__':
-    print('Welcome')
-    time.sleep(1)
-    print('This program does basic math calculations.')
-    time.sleep(2)
-    message = '''\
-    Type \'exit\' or press \'Ctrl+c\' at any moment to close the program
-    and \'0\' for operation to reset calculator\'s memory.\
-    '''
-    print(message)
-    time.sleep(2)
+    # print('Welcome')
+    # time.sleep(1)
+    # print('This program does basic math calculations.')
+    # time.sleep(2)
+    # message = '''\
+    # Type \'exit\' or press \'Ctrl+c\' at any moment to close the program
+    # and \'0\' for operation to reset calculator\'s memory.\
+    # '''
+    # print(message)
+    # time.sleep(2)
     calculator = Calculator()
     num_to_operate_on = input('What\'s the number to operate on?\n')
     calculator.memory = num_to_operate_on
