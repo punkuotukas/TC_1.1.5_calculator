@@ -1,7 +1,7 @@
 A package with basic calculator functions: addition, subtraction, multiplication, division, root.
 
 #### INSTALLATION
-    `pip install not-so-basic-calculator`
+    pip install not-so-basic-calculator
 
 #### VIRTUAL ENVIRONMENT SETUP
 1. navigate to project's root directory
@@ -16,8 +16,8 @@ You should see '(venv)' at the end of your terminal prompt line which indicates 
 
 To run tests:
 
-    `pytest`
+    pytest
 
 To generate 'requirements.txt' file with dependencies of the project:
 
-    `pip freeze > requirements.txt`
+    pip freeze > requirements.txt
