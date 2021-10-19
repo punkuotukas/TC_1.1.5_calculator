@@ -1,6 +1,6 @@
 A package with basic calculator functions: addition, subtraction, multiplication, division, root.
 
-**INSTALLATION**\n
+# INSTALLATION
 `pip install not-so-basic-calculator`
 
 To setup a virtual environment for development:
