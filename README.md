@@ -14,6 +14,12 @@ A package with basic calculator functions: addition, subtraction, multiplication
 
 You should see '(venv)' at the end of your terminal prompt line which indicates that virtual environment is active.
 
+To start the calculator, run:
+
+    python /calculator/__init__.py
+
+Follow the instructions on the command line afterwards.
+
 To run tests:
 
     pytest
