@@ -11,7 +11,8 @@ To setup a virtual environment for development:
 3. activate venv with:
 
     `source venv/bin/activate`
-   You should see '(venv)' at the end of your terminal prompt line which indicates that virtual environment is active.
+    
+You should see '(venv)' at the end of your terminal prompt line which indicates that virtual environment is active.
 
 To run tests:
 
