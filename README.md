@@ -1,7 +1,7 @@
 A package with basic calculator functions: addition, subtraction, multiplication, division, root.
 
 #### INSTALLATION
-`pip install not-so-basic-calculator`
+    `pip install not-so-basic-calculator`
 
 To setup a virtual environment for development:
 1. navigate to project's root directory
@@ -11,7 +11,7 @@ To setup a virtual environment for development:
 3. activate venv with:
 
     `source venv/bin/activate`
-You should see '(venv)' at the end of your terminal prompt line which indicates that virtual environment is active.
+   You should see '(venv)' at the end of your terminal prompt line which indicates that virtual environment is active.
 
 To run tests:
 
