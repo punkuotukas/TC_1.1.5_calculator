@@ -178,8 +178,8 @@ if __name__ == '__main__':
     print(message)
     time.sleep(2)
     calculator = Calculator()
-    num_to_operate_on: float = float(input(
-        'What\'s the number to operate on?\n'))
+    num_to_operate_on: float = float(
+        input('What\'s the number to operate on?\n'))
     calculator.memory = num_to_operate_on
     while True:
         if num_to_operate_on != 'exit':
